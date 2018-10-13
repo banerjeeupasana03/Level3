@@ -4,16 +4,20 @@ var red = Math.round(Math.random()*255)
 return "rgb("+red+", 100, 100)";
 }
 
+var i = 0;
 setInterval(()=>{
-app.style.backgroundColor = "rgb(255,222,255)";
+if(i%2==0){
+app.style.backgroundColor = RandomRed();
+}else{
+app.style.backgroundColor = RandomBlue();
+}
+i++;
 }, 500);
 
-<<<<<<< HEAD
+
 //B
 function RandomBlue(){
-
+var blue = Math.round(Math.random()*255)
+return "rgb(100, 100, "+blue+")";
 }
-=======
 
-
->>>>>>> 49ade4baeb84aded60e88ea6804bca0afceac518
